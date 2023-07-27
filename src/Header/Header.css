@@ -1,0 +1,24 @@
+@media screen and (max-width: 600px) {
+    .Icon {
+        height: 2rem !important;
+        width: 2rem !important;
+    }
+}
+
+.Icon{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 1rem;
+    transition-duration: 0.2s;
+}
+
+.Header{
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    letter-spacing: .1rem;
+    font-family: Montserrat;
+    font-size: 1.4375rem;
+    font-style: normal;
+    font-weight: 400;
+    border-bottom: 0.1rem solid;
+}
