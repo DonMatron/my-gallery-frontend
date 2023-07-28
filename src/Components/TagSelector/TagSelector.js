@@ -1,29 +1,35 @@
 import './TagSelector.css';
-import TagButton from '../TagButton/TagButton';
+import React, { useState, useEffect } from 'react';
 
-function TagSelector() {
-    const tags = ['Skies', 'Street', 'Travel', 'Landscape', 'Macro', 'Stars']
+function TagSelector(props) {
+
+    const [selectedTag, setSelectedTag] = useState("");
+
+    useEffect(() => {
+        console.log(selectedTag);
+    });
+
+    function setTag(tag) {
+        if (selectedTag === tag) {
+            setSelectedTag("");
+            return;
+        }
+        setSelectedTag(tag);
+    }
 
     return (
-        <div className="">
-
-            {/* Make radio functionality with useEffect?*/}
-            {/* Implement radio buttons*/}
-
-            {/* <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                <input type="radio" className="btn-check" name="btnradio" id="btnradio1" checked={true}/>
-                <label className="btn btn-outline-primary" for="btnradio1">Radio 1</label>
-
-                <input type="radio" className="btn-check" name="btnradio" id="btnradio2"/>
-                <label className="btn btn-outline-primary" for="btnradio2">Radio 2</label>
-
-                <input type="radio" className="btn-check" name="btnradio" id="btnradio3"/>
-                <label className="btn btn-outline-primary" for="btnradio3">Radio 3</label>
-            </div> */}
-
-            {/* {tags.map((tag) => (
-                <TagButton text={tag}/>
-            ))} */}
+        <div className="container-liquid p-3 text-center overflow-auto">
+            <div className="col overflow-auto" >
+                {props.tags.map((tag) => (
+                    <button
+                        key={tag}
+                        type="button"
+                        className={selectedTag === tag ? "Button Active " + tag : "Button"}
+                        onClick={() => setTag(tag)}>
+                        {tag}
+                    </button>
+                ))}
+            </div>
         </div>
     );
 }

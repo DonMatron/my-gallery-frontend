@@ -1,0 +1,24 @@
+.TagSelector{
+
+}
+
+.Active {
+    background: #2797FF !important;
+    color: #FFF;
+    border: 1px solid #2797FF !important;
+}
+
+.Button {
+    border: 1px solid rgba(0, 0, 0, 0.134);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0.3rem 1rem ;
+    border-radius: 3.75rem;
+    background: #ffffff00;
+    transition-duration: 0.1s;
+    margin: 0.2rem;
+}
