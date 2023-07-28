@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .Icon {
         height: 2rem !important;
         width: 2rem !important;
@@ -13,8 +13,8 @@
 }
 
 .Header{
-    padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
     letter-spacing: .1rem;
     font-family: Montserrat;
     font-size: 1.4375rem;

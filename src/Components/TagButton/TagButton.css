@@ -1,0 +1,18 @@
+.TagButtonSelected{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    border-radius: 3.75rem;
+    background: #2761ff;
+    height: 2rem;
+    display: inline-flex;
+    padding: 1rem 1.3rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
