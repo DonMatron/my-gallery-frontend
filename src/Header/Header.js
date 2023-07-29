@@ -12,8 +12,12 @@ function Header() {
         </div>
 
         <div className='col-auto my-auto'>
-          <img src={InstagramIcon} className="Icon" alt="InstagramIcon" />
-          <img src={TelegramIcon} className="Icon" alt="TelegramIcon" />
+          <a href='https://www.instagram.com/danyloprudkyi/' target="_blank">
+            <img src={InstagramIcon} className="Icon" alt="InstagramIcon" />
+          </a>
+          <a href='https://t.me/DanyloPrudkyiGallery' target="_blank">
+            <img src={TelegramIcon} className="Icon" alt="TelegramIcon" />
+          </a>
         </div>
 
       </div>

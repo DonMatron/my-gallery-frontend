@@ -1,9 +1,3 @@
-@media screen and (min-width: 1800px) {
-    .Button{
-        font-size: 1.5rem !important;
-    }
-}
-
 .Active {
     background: #2797FF !important;
     color: #FFF;

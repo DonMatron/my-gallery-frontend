@@ -1,9 +1,3 @@
-@media screen and (min-width: 1800px) {
-    .Header{
-        font-size: 2rem !important;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .Icon {
         height: 2rem !important;

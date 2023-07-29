@@ -45,9 +45,3 @@
         font-size: 0.8rem;
     }
 }
-
-@media screen and (min-width: 1800px) {
-    .CardText {
-        font-size: 1.5rem;
-    }
-}

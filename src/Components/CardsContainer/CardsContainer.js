@@ -11,8 +11,8 @@ function CardsContainer(props) {
         <div className=" CardsContainer mx-md-5 mx-4">
             {props.cards.map((card) => (isCardShown(card) &&
 
-                <div className=''>
-                    <div className="Card" key={card.imageUrl}>
+                <div key={card.imageUrl}>
+                    <div className="Card" >
                         <div className="CardImageFrame">
                             <img className="CardImage" src={card.imageUrl} />
                         </div>

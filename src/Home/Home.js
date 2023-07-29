@@ -3,6 +3,7 @@ import Title from '../Components/Title/Title';
 import TagSelector from '../Components/TagSelector/TagSelector';
 import CardsContainer from '../Components/CardsContainer/CardsContainer';
 import React, { useState } from 'react';
+import './Home.css';
 
 function Home() {
 
