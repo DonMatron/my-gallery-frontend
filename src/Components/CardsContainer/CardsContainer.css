@@ -1,45 +1,23 @@
-@media screen and (max-width: 1000px) {
-    .CardsContainer{
-        margin: 0rem 1.6rem;
-    }
-
-    .Card {
-        margin: 0rem 0rem 3rem 0rem !important;
-        width: 100% !important;
-        display: block !important;
-    }
-
-    .CardText{
-        font-size: 0.8rem !important;
-    }
-}
-
-@media screen and (min-width: 1800px) {
-    .CardText{
-        font-size: 1.5rem !important;
-    }
-}
-
-.CardsContainer{
+.CardsContainer {
     text-align: center;
+    column-count: 3;
+    column-gap: 2em;
 }
 
 .Card {
-    width: 40%;
-    margin: 0.5rem;
-    display: inline-block;    
     border-radius: 0.3rem;
     box-shadow: 0rem 0rem 1.4rem rgba(0, 0, 0, 0.395);
-    vertical-align: top;
+    display: inline-block;
+    margin: 0 0 2em;
+    width: 100%;
 }
-
 
 .CardImage {
     width: 100%;
     border-radius: 0.3rem 0.3rem 0rem 0rem;
 }
 
-.CardBody{
+.CardBody {
     display: flex;
     justify-content: center;
     flex: 1 1 auto;
@@ -57,36 +35,19 @@
     transition-duration: 0.2s;
 }
 
+@media screen and (max-width: 1000px) {
+    .CardsContainer {
+        column-count: 1;
+        column-gap: 1em;
+    }
 
-/* .awards-cards {
-    column-count: 4;
-    column-gap: 1em;
-  
-  }
-  
-  .award-card__wrapper {
-    background-color: #eee;
-    display: inline-block;
-    margin: 0 0 1em;
-    width: 100%;
-  }
-  
-  .w1{
-    height:40px;
-  }
-  
-  .w2{
-    height:90px;
-  }
-  
-  .w3{
-    height:140px;
-  }
-  
-  
-  @media only screen and (max-width: 480px) {
-  .awards-cards {
-    column-count: 3;
-    column-gap: 1em;
-  }
-  } */
+    .CardText {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .CardText {
+        font-size: 1.5rem;
+    }
+}

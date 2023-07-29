@@ -8,13 +8,11 @@ function CardsContainer(props) {
     }
 
     return (
-        <>
-            <div className="CardsContainer">
+        <div className=" CardsContainer mx-md-5 mx-4">
+            {props.cards.map((card) => (isCardShown(card) &&
 
-                {props.cards.map((card) => (isCardShown(card) &&
-
+                <div className=''>
                     <div className="Card" key={card.imageUrl}>
-                        {/* <div className="CardImage" style={{ backgroundImage: 'url(' + card.imageUrl + ')' }} /> */}
                         <div className="CardImageFrame">
                             <img className="CardImage" src={card.imageUrl} />
                         </div>
@@ -28,59 +26,10 @@ function CardsContainer(props) {
                             <div className="CardText">{card.focalLength} mm</div>
                         </div>
                     </div>
-
-                ))}
-
-            </div>
-            {/* <div class="awards-cards">
-                <div class="award-card__wrapper">
-                    <div class="w1">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w1">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w2">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w2">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w1">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w2">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w1">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w2">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w2">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w1">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w2">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w3">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w1">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w2">data inside</div>
-                </div>
-                <div class="award-card__wrapper">
-                    <div class="w1">data inside</div>
                 </div>
 
-            </div> */}
-        </>
+            ))}
+        </div>
     );
 }
 

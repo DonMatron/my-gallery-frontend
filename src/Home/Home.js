@@ -41,7 +41,8 @@ function Home() {
       iso: '100',
       focalLength: '50',
       tags: ['Skies', 'Stars']
-    }
+    },
+    
   ]
 
   const tags = getTags();
