@@ -4,7 +4,7 @@ import './Header.css';
 
 function Header() {
   return (
-    <div className="container-liquid">
+    <div className="container-fluid">
       <div className="Header row">
 
         <div className='d-flex justify-content-center col my-auto'>

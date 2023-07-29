@@ -5,10 +5,6 @@ function TagSelector(props) {
 
     const [selectedTag, setSelectedTag] = useState("");
 
-    useEffect(() => {
-        console.log(selectedTag);
-    });
-
     function setTag(tag) {
         if (selectedTag === tag) {
             setSelectedTag("");
