@@ -1,9 +1,92 @@
+@media screen and (max-width: 1000px) {
+    .CardsContainer{
+        margin: 0rem 1.6rem;
+    }
+
+    .Card {
+        margin: 0rem 0rem 3rem 0rem !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .CardText{
+        font-size: 0.8rem !important;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    .CardText{
+        font-size: 1.5rem !important;
+    }
+}
+
+.CardsContainer{
+    text-align: center;
+}
+
+.Card {
+    width: 40%;
+    margin: 0.5rem;
+    display: inline-block;    
+    border-radius: 0.3rem;
+    box-shadow: 0rem 0rem 1.4rem rgba(0, 0, 0, 0.395);
+    vertical-align: top;
+}
+
+
+.CardImage {
+    width: 100%;
+    border-radius: 0.3rem 0.3rem 0rem 0rem;
+}
+
+.CardBody{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
 .CardText {
     padding-left: 0.6rem;
     padding-right: 0.6rem;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    transition-duration: 0.2s;
 }
 
-.parent {
-    display: flex;
-    justify-content: center;
-}
+
+/* .awards-cards {
+    column-count: 4;
+    column-gap: 1em;
+  
+  }
+  
+  .award-card__wrapper {
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1em;
+    width: 100%;
+  }
+  
+  .w1{
+    height:40px;
+  }
+  
+  .w2{
+    height:90px;
+  }
+  
+  .w3{
+    height:140px;
+  }
+  
+  
+  @media only screen and (max-width: 480px) {
+  .awards-cards {
+    column-count: 3;
+    column-gap: 1em;
+  }
+  } */

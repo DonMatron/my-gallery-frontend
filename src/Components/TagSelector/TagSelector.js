@@ -3,14 +3,12 @@ import React, { useState, useEffect } from 'react';
 
 function TagSelector(props) {
 
-    const [selectedTag, setSelectedTag] = useState("");
-
     function setTag(tag) {
-        if (selectedTag === tag) {
-            setSelectedTag("");
+        if (props.selectedTag === tag) {
+            props.setSelectedTag("");
             return;
         }
-        setSelectedTag(tag);
+        props.setSelectedTag(tag);
     }
 
     return (
@@ -20,7 +18,7 @@ function TagSelector(props) {
                     <button
                         key={tag}
                         type="button"
-                        className={selectedTag === tag ? "Button Active " + tag : "Button"}
+                        className={props.selectedTag === tag ? "Button Active " + tag : "Button"}
                         onClick={() => setTag(tag)}>
                         {tag}
                     </button>
